@@ -1,17 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
-function handleNameChange() {
-  const names = ["Earn", "Grow", "Give"];
-  const int = Math.floor(Math.random()*3);
-  return names[int]
-}
+import Content from "./Content";
+import Footer from "./Footer";
+import Header from "./Header";
 
 function App() {
   return (
     <div>
-      Subscribe to Kaasu
-      <p>Let's {handleNameChange()} Money</p>
+      <Header />
+      <Content />
+      <Footer />
     </div>
   );
 }
