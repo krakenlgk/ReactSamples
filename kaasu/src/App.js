@@ -1,13 +1,24 @@
-import Content from "./Content";
-import Footer from "./Footer";
-import Header from "./Header";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
+  
   return (
     <div className="App">
-      <Header />
-      <Content />
-      <Footer />
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo"/>
+        <p>
+          Subscribe to Kaasu
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
